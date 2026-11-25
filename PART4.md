@@ -57,7 +57,7 @@ When a change is pushed to `main`, GitHub starts the workflow. The build job mus
 4. In browser developer tools, check that the entry module, generated JavaScript/CSS, and other requests use the repository subpath (for example, `/<REPOSITORY>/assets/...`) and return successfully.
 5. After a later change is pushed to `main`, confirm a new workflow run starts for that commit and publishes it.
 
-No GitHub Actions run or live deployment has been performed from this workspace, so deployment success and a concrete live URL are not yet verified.
+The first push triggered a [GitHub Actions run](https://github.com/huzaifanaseerx3/RESCUE-A-LEGACY-GAME-WITH-AI/actions/runs/45704476711). Dependency installation, type-checking, and the production build succeeded. `actions/configure-pages` then failed because the repository's Pages site is not yet enabled and configured to use GitHub Actions; artifact upload and deployment were skipped. No live deployment is verified. After completing the Pages settings below, rerun the workflow from the **Actions** tab.
 
 ## Local configuration verification
 
